@@ -3,14 +3,14 @@ import requests
 
 class GetAPIData:
     """
-    Class récupération data
+    This class retrieves the data in json format from api
     """
     
-    def __init__(self, url):                # url recupérée lors de l'initialisation de l'objet
+    def __init__(self, url): # API url
         self.url = url
 
 ###################################################################################################
-##   Récupération des données au format json                                                     ##
+##                          GET API DATA JSON FORMAT                                             ##
 ###################################################################################################
     def json_data(self):
         r = requests.get(self.url)
