@@ -19,9 +19,9 @@ def main():
             print("Connected to SQLite")
 
             sqlite_select_query = """
-                                    SELECT geoname_id, name,country_code, population
+                                    SELECT country_code, cou_name_en
                                     FROM cities_pop
-                                    GROUP BY country_code
+                                    GROUP BY country_code 
                                     HAVING MAX(population) < 10000000
                                 """
             cursor.execute(sqlite_select_query)
@@ -46,17 +46,14 @@ def main():
         # Ecrire dans le ficher avec les noms de colonnes
         writer = csv.writer(file, delimiter=',')
         # on crée les colonnes du fichier
-        writer.writerow(['geoname_id', 'cou_name_en',
-                        'ascii_name', 'country_code'])
+        writer.writerow([ 'country_code', 'cou_name_en'])
         data = readSqliteTable()
         for i in range(len(data)):
-            geoname_id = data[i][0]
+            country_code = data[i][0]
             cou_name_en = data[i][1]
-            ascii_name = data[i][2]
-            country_code = data[i][3]
 
             writer.writerow(
-                [geoname_id, cou_name_en, ascii_name, country_code])
+                [country_code, cou_name_en])
     #print(readSqliteTable())
 
 
