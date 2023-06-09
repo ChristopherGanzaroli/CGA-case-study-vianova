@@ -22,7 +22,7 @@ def main():
                                     SELECT country_code, cou_name_en
                                     FROM cities_pop
                                     GROUP BY country_code 
-                                    HAVING MAX(population) < 10000000
+                                    HAVING MAX(population) < 10000000 
                                 """
             cursor.execute(sqlite_select_query)
             records = cursor.fetchall()
