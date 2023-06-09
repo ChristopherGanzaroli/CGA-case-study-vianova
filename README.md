@@ -51,10 +51,8 @@ AlimTable_cities_pop.py
 ![case_study_all](https://github.com/ChristopherGanzaroli/CGA-case-study-vianova/assets/60617045/a3ec7b35-342c-45de-b652-1a71270fe2d5)
 
 ```bash
-main.py
+main.py (export response.csv file)
 ```
-![case_study_res](https://github.com/ChristopherGanzaroli/CGA-case-study-vianova/assets/60617045/d57d8c2e-aca4-4e67-811a-d663ff4080d6)
-
-
+![case_study_res](https://github.com/ChristopherGanzaroli/CGA-case-study-vianova/assets/60617045/4d69b587-8f18-4122-afb0-48c51507b285)
 
  
