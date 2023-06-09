@@ -26,7 +26,7 @@ Dowload python
 
 Directories are organised into several branches :
 
-Class : contains scripts for connecting to the database and retrieving data from the API
+Class : contains scripts for connecting to the database and retrieving data from the API (10 000 rows constraint from https://public.opendatasoft.com/explore/dataset/geonames-all-cities api)
 
 DB: contains the database and execution scripts
 
