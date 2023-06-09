@@ -46,7 +46,7 @@ def main():
         # Ecrire dans le ficher avec les noms de colonnes
         writer = csv.writer(file, delimiter=',')
         # on crée les colonnes du fichier
-        writer.writerow([ 'country_code', 'cou_name_en'])
+        writer.writerow([ 'country_code', 'country_name'])
         data = readSqliteTable()
         for i in range(len(data)):
             country_code = data[i][0]
