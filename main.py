@@ -19,9 +19,10 @@ def main():
             print("Connected to SQLite")
 
             sqlite_select_query = """
-                                    select geoname_id,cou_name_en,ascii_name,country_code,sum(population) as total_pop from cities_pop
-                                    where population < 1000000
-                                    group by country_code;
+                                    SELECT geoname_id, name,country_code, population
+                                    FROM cities_pop
+                                    GROUP BY country_code
+                                    HAVING MAX(population) < 10000000
                                 """
             cursor.execute(sqlite_select_query)
             records = cursor.fetchall()
