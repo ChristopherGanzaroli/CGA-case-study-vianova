@@ -18,7 +18,7 @@ Please send us the link to your github repository with the answer of the exercis
 
 Dowload  Vscode
 
-Dowload sqlite3 pluging in Vscode
+Dowload sqlite3 plugin in Vscode
 
 Dowload python
 
@@ -26,15 +26,15 @@ Dowload python
 
 Directories are organised into several branches :
 
-Class : contains the scripts for connecting to the database and retrieving data from the API
+Class : contains scripts for connecting to the database and retrieving data from the API
 
 DB: contains the database and execution scripts
 
 - ALD : contains the table feed script
-- EXP : contains the script for exporting table data
+- EXP : contains the script for exporting data table
 - INSTALL : contains the table installation script
 
-DATA : contains all data exported from the EXP directory but also imported manually
+DATA : contains all data exported from the EXP directory and manually imported data
 
 ## Result
 
